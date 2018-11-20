@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import {Link} from 'react-router-dom';
 
 const Overlay = styled.div`
     background: #000;
@@ -37,11 +38,13 @@ const Menu = (props) => {
                     <ul className="menu-navigation">
                         {props.children.map((element) => {
                             return (
-                                <li key={element.props.children}
-                                    className="noselect"
-                                    onClick={props.triggerMenu}>
-                                    {element.props.children}
-                                </li>)
+                                <Link key={element.props.children}
+                                      className="noselect"
+                                      onClick={props.triggerMenu}
+                                      to={element.props.href}>
+                                    <li>{element.props.children}</li>
+                                </Link>
+                            )
                         })}
                     </ul>
                 </div>
