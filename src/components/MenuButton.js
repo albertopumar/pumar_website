@@ -5,7 +5,7 @@ const ButtonContainer = styled.div`
     position: relative;
     margin-right: 1.2em;
     float: right;
-    z-index: 1;
+    z-index: 10;
     & button {
         cursor: pointer;
         border: none;

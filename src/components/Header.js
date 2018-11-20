@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const HeaderContainer = styled.div`
     padding-top: 50px;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
     
     & h1 {

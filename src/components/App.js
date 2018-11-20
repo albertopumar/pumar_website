@@ -4,7 +4,8 @@ import {TimelineMax, Expo} from 'gsap/all';
 import Background from './Background';
 import Header from './Header';
 import MenuButton from './MenuButton';
-import Menu from "./Menu";
+import Menu from './Menu';
+import BlockQuote from './BlockQuote'
 
 class App extends Component {
 
@@ -56,34 +57,11 @@ class App extends Component {
                     <li>Contact</li>
                 </Menu>
 
-                {/*<div className="header">*/}
-                {/*<h1>Alberto Pumar Jiménez</h1>*/}
-                {/*<div className="menu-btn">*/}
-                {/*<button type="button"><i className="material-icons">menu</i></button>*/}
-                {/*</div>*/}
-                {/*</div>*/}
 
-                {/*<div className="blockquote">*/}
-                {/*<blockquote>*/}
-                {/*Mejorar y aprender cada día enfrentándome y*/}
-                {/*resolviendo los problemas que se me pongan por delante*/}
-                {/*<cite>Alberto Pumar</cite>*/}
-                {/*</blockquote>*/}
-                {/*</div>*/}
-
-                {/*<div className="menu">*/}
-                    {/*<div className="row">*/}
-                        {/*<div className="col-lg overlay">*/}
-                            {/*<div className="nav">*/}
-                                {/*<ul>*/}
-                                    {/*<li className="noselect">Home</li>*/}
-                                    {/*<li className="noselect">About me</li>*/}
-                                    {/*<li className="noselect">Contact</li>*/}
-                                {/*</ul>*/}
-                            {/*</div>*/}
-                        {/*</div>*/}
-                    {/*</div>*/}
-                {/*</div>*/}
+                <BlockQuote author="Alberto Pumar">
+                    Mejorar y aprender cada día enfrentándome y
+                    resolviendo los problemas que se me pongan por delante
+                </BlockQuote>
 
             </Background>
         );

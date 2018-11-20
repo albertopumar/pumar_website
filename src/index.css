@@ -9,25 +9,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.row, .col-lg {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.col-lg {
-  height: 100vh;
-}
-
-.col-lg.overlay {
-  background: #000;
-  opacity: 0.8;
-  position: absolute;
-  top: -100%;
+* {
+  box-sizing: border-box;
 }
 
 ul {
